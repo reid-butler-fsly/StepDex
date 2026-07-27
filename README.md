@@ -15,8 +15,12 @@ insights are all computed **at the edge**, per request.
   MARKET price, bucketed into tiers: `Chase >$50 · Ultra Rare $10–50 · Rare $2–10 ·
   Uncommon $0.50–2 · Common <$0.50`.
 - **Team standings** — walkers are aggregated by their team, ranked by combined steps.
+- **Card art on hover** — hovering any card name previews the real card image, resolved from the
+  [Pokémon TCG](https://pokemontcg.io/) image CDN.
 - **Insights** — combined distance, total reward value, rarity distribution, plus per-walker
   best day, goal-days met, and a neon daily-activity equalizer (in the spirit of EdgeWalk).
+
+![Card art preview on hover](docs/hover.png)
 
 ## Endpoints
 
@@ -41,8 +45,9 @@ Both CSVs are embedded at compile time (`include_str!`), so just replace the fil
   Avg Daily Steps, Daily Step Goal, Total Distance (mi), Total Distance (km),
   Avg Daily Distance (mi), Avg Daily Distance (km)`, followed by one column per day
   (`YYYY-MM-DD`). The parser is quote-aware (`"12,345"`) and tolerates `N.A` for missing days.
-- **`data/pokemon.csv`** — schema: `card_name,set_name,card_number,condition,market`
-  (sorted rarest-first; `market` is the rarity proxy)
+- **`data/pokemon.csv`** — schema: `card_name,set_name,card_number,condition,market,image_url`
+  (sorted rarest-first; `market` is the rarity proxy; `image_url` is the Pokémon TCG CDN art
+  used for the hover preview)
 
 ```sh
 # edit data/steps.csv ...

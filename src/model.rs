@@ -31,6 +31,8 @@ pub struct Card {
     pub tier: &'static str,
     /// Hex accent color for the tier, used by the UI glow/badges.
     pub tier_color: &'static str,
+    /// Card art URL (Pokémon TCG CDN) for the hover preview; "" if unknown.
+    pub image_url: String,
 }
 
 /// A walker after ranking, paired with the card their rank earns them.
@@ -169,6 +171,7 @@ fn parse_cards() -> Vec<Card> {
                 market,
                 tier,
                 tier_color,
+                image_url: f.get(5).cloned().unwrap_or_default(),
             })
         })
         .collect()

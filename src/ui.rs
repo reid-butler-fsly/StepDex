@@ -135,6 +135,16 @@ const TEMPLATE: &str = r##"<!DOCTYPE html>
   }
   .btn:hover { border-color: var(--neon); }
   footer { margin-top: 40px; color: var(--muted); font-size: 12px; }
+
+  /* Card hover preview */
+  .cardhover { border-bottom: 1px dotted currentColor; cursor: help; }
+  #cardpreview {
+    position: fixed; z-index: 100; display: none; pointer-events: none;
+    width: 230px; border-radius: 12px; overflow: hidden; background: #0a0d18;
+    border: 1px solid var(--panel-border); box-shadow: 0 16px 44px rgba(0,0,0,0.65);
+  }
+  #cardpreview img { display: block; width: 100%; height: auto; }
+  #cardpreview .ph { padding: 24px 12px; text-align: center; color: var(--muted); font-size: 12px; }
 </style>
 </head>
 <body>
@@ -183,8 +193,10 @@ const TEMPLATE: &str = r##"<!DOCTYPE html>
   <h2>Cards earned</h2>
   <div class="showcase" id="showcase"></div>
 
-  <footer>StepDex POC · in the spirit of EdgeWalk · rewards assigned by total-step rank.</footer>
+  <footer>StepDex POC · in the spirit of EdgeWalk · rewards assigned by total-step rank. Hover a card name to preview the art.</footer>
 </div>
+
+<div id="cardpreview"><div class="ph">loading…</div><img alt="" style="display:none"></div>
 
 <script>
 const DATA = /*__STEPDEX_DATA__*/;
@@ -228,10 +240,18 @@ function renderInsights() {
   ].join("");
 }
 
+// Wrap a card name so hovering it previews the card art.
+function cardName(text, card) {
+  if (card && card.image_url) {
+    return `<span class="cardhover" data-img="${card.image_url}">${text}</span>`;
+  }
+  return text;
+}
+
 function rewardBlock(r) {
   if (!r) return `<div class="cardmeta">Keep walking — no card yet</div>`;
   return `<span class="tierchip" style="background:${r.tier_color}">${r.tier}</span>
-    <div class="cardname">${r.card_name}</div>
+    <div class="cardname">${cardName(r.card_name, r)}</div>
     <div class="cardmeta">${r.set_name} · #${r.card_number} · ${r.condition}</div>
     <div class="cardval" style="color:${r.tier_color}">${usd(r.market)}</div>`;
 }
@@ -290,7 +310,7 @@ function renderRows() {
       <td class="num">${fmt(e.best_day)}</td>
       <td class="num">${e.days_goal_met}/${e.active_days}</td>
       <td style="min-width:150px">${equalizer(e.daily, glow)}</td>
-      <td>${r ? r.card_name : "—"}<div class="cardmeta">${r ? r.set_name : ""}</div></td>
+      <td>${r ? cardName(r.card_name, r) : "—"}<div class="cardmeta">${r ? r.set_name : ""}</div></td>
       <td>${r ? `<span class="tierchip" style="background:${r.tier_color}">${r.tier}</span>` : ""}</td>
       <td class="num">${r ? usd(r.market) : "—"}</td>
     </tr>`;
@@ -303,7 +323,7 @@ function renderShowcase() {
       const r = e.reward;
       return `<div class="poke" style="--glow:${r.tier_color}">
         <div class="pk-rank">#${e.rank} · ${e.name}</div>
-        <div class="pk-name">${r.card_name}</div>
+        <div class="pk-name">${cardName(r.card_name, r)}</div>
         <div class="cardmeta">${r.set_name}</div>
         <span class="tierchip" style="background:${r.tier_color};margin-top:8px">${r.tier} · ${usd(r.market)}</span>
       </div>`;
@@ -312,6 +332,44 @@ function renderShowcase() {
 
 renderRange(); renderInsights(); renderPodium();
 renderTeams(); renderRarity(); renderRows(); renderShowcase();
+
+// Cursor-following card preview. Uses one fixed element so it escapes the
+// leaderboard's scroll container; each image is fetched on first hover.
+(function () {
+  const box = document.getElementById("cardpreview");
+  const img = box.querySelector("img");
+  const ph = box.querySelector(".ph");
+  let current = "";
+  document.addEventListener("mouseover", (e) => {
+    const h = e.target.closest(".cardhover");
+    if (!h || !h.dataset.img) return;
+    if (h.dataset.img !== current) {
+      current = h.dataset.img;
+      img.style.display = "none";
+      ph.style.display = "block";
+      img.onload = () => { ph.style.display = "none"; img.style.display = "block"; };
+      img.onerror = () => { ph.textContent = "art unavailable"; };
+      img.src = current;
+    }
+    box.style.display = "block";
+  });
+  document.addEventListener("mousemove", (e) => {
+    if (box.style.display !== "block") return;
+    const w = 230, hgt = 320, pad = 16;
+    let x = e.clientX + pad, y = e.clientY + pad;
+    if (x + w > innerWidth) x = e.clientX - w - pad;
+    if (y + hgt > innerHeight) y = e.clientY - hgt - pad;
+    box.style.left = x + "px";
+    box.style.top = Math.max(8, y) + "px";
+  });
+  document.addEventListener("mouseout", (e) => {
+    const h = e.target.closest(".cardhover");
+    if (!h) return;
+    const to = e.relatedTarget;
+    if (to && to.closest && to.closest(".cardhover") === h) return;
+    box.style.display = "none";
+  });
+})();
 </script>
 </body>
 </html>"##;
