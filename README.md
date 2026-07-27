@@ -5,6 +5,8 @@ it turns a **steps CSV** into a neon leaderboard and rewards the biggest walkers
 **Pokémon cards** — the more you walk, the rarer the card you earn. Ranking, rewards, and
 insights are all computed **at the edge**, per request.
 
+![StepDex dashboard](docs/screenshot.png)
+
 ## How it works
 
 - **Rank-based podium** — walkers are sorted by total steps; #1 earns the rarest available card,
