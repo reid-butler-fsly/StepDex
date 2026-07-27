@@ -7,7 +7,9 @@ description = ""
 language = "rust"
 manifest_version = 3
 name = "stepdex"
-service_id = ""
+service_id = "1qNKGgI1CiwoSL0vxoSmlD"
+
+[local_server]
 
 [scripts]
   build = "cargo build --profile release"
