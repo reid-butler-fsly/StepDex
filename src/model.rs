@@ -96,11 +96,11 @@ pub struct Leaderboard {
 /// Map a market price to a rarity tier + accent color.
 fn tier_for(market: f64) -> (&'static str, &'static str) {
     match market {
-        m if m > 50.0 => ("Chase", "#ff4fd8"),
-        m if m >= 10.0 => ("Ultra Rare", "#b06bff"),
-        m if m >= 2.0 => ("Rare", "#4f8cff"),
-        m if m >= 0.5 => ("Uncommon", "#33d6a6"),
-        _ => ("Common", "#8b9bb4"),
+        m if m >= 350.0 => ("Grail", "#ffd24f"),
+        m if m >= 250.0 => ("Chase", "#ff4fd8"),
+        m if m >= 150.0 => ("Ultra Rare", "#b06bff"),
+        m if m >= 60.0 => ("Rare", "#4f8cff"),
+        _ => ("Premium", "#33d6a6"),
     }
 }
 
@@ -281,11 +281,11 @@ pub fn compute() -> Leaderboard {
     let mut total_distance_mi = 0.0;
     let mut total_reward_value = 0.0;
     let mut tiers: Vec<(&'static str, &'static str, usize)> = vec![
+        ("Grail", "#ffd24f", 0),
         ("Chase", "#ff4fd8", 0),
         ("Ultra Rare", "#b06bff", 0),
         ("Rare", "#4f8cff", 0),
-        ("Uncommon", "#33d6a6", 0),
-        ("Common", "#8b9bb4", 0),
+        ("Premium", "#33d6a6", 0),
     ];
 
     for (i, w) in walkers.iter().enumerate() {

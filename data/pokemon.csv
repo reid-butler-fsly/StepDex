@@ -1,89 +1,31 @@
 card_name,set_name,card_number,condition,market,image_url
-Espeon ex,Prismatic Evolutions,155,Mint,239.21,https://images.pokemontcg.io/sv8pt5/155.png
-Xatu,Scarlet & Violet Promos,059staff,NearMint,18.14,https://images.pokemontcg.io/svp/59.png
-Noctowl,Prismatic Evolutions,078MBALL,NearMint,8.53,https://images.pokemontcg.io/sv8pt5/78.png
-Feraligatr,Scarlet & Violet Promos,089,NearMint,6.15,https://images.pokemontcg.io/svp/89.png
-Froslass,Scarlet & Violet Promos,117,NearMint,4.95,https://images.pokemontcg.io/svp/117.png
-Flareon ex,Prismatic Evolutions,014,NearMint,4.54,https://images.pokemontcg.io/sv8pt5/14.png
-Tatsugiri,Scarlet & Violet Promos,118,NearMint,3.42,https://images.pokemontcg.io/svp/118.png
-Koraidon,Scarlet & Violet Promos,091,NearMint,2.72,https://images.pokemontcg.io/svp/91.png
-Metang,Scarlet & Violet Promos,090,NearMint,2.44,https://images.pokemontcg.io/svp/90.png
-Jolteon ex,Prismatic Evolutions,030,NearMint,2.07,https://images.pokemontcg.io/sv8pt5/30.png
-Counter Catcher,Paradox Rift,160,NearMint,1.60,https://images.pokemontcg.io/sv4/160.png
-Crispin,Pokémon Prize Pack Series,133,NearMint,1.36,https://images.pokemontcg.io/svp/133.png
-Dragapult ex,Twilight Masquerade,130,NearMint,1.18,https://images.pokemontcg.io/sv6/130.png
-Terapagos ex,Stellar Crown,128,NearMint,1.13,https://images.pokemontcg.io/sv7/128.png
-Pecharunt ex,Shrouded Fable,039,NearMint,0.86,https://images.pokemontcg.io/sv6pt5/39.png
-Iron Valiant ex,Scarlet & Violet Promos,068,NearMint,0.82,https://images.pokemontcg.io/svp/68.png
-Vaporeon,Scarlet & Violet Promos,168,NearMint,0.78,https://images.pokemontcg.io/svp/168.png
-Flareon,Scarlet & Violet Promos,167,NearMint,0.78,https://images.pokemontcg.io/svp/167.png
-Munkidori,Prismatic Evolutions,044,NearMint,0.67,https://images.pokemontcg.io/sv8pt5/44.png
-Iron Thorns ex,Prismatic Evolutions,032,NearMint,0.60,https://images.pokemontcg.io/sv8pt5/32.png
-Flutter Mane,Temporal Forces,078,NearMint,0.30,https://images.pokemontcg.io/sv5/78.png
-Buddy-Buddy Poffin,Temporal Forces,144,NearMint,0.24,https://images.pokemontcg.io/sv5/144.png
-Umbreon,Prismatic Evolutions,059,NearMint,0.23,https://images.pokemontcg.io/sv8pt5/59.png
-Budew,Prismatic Evolutions,004,NearMint,0.23,https://images.pokemontcg.io/sv8pt5/4.png
-Croconaw,Temporal Forces,040,NearMint,0.22,https://images.pokemontcg.io/sv5/40.png
-Jamming Tower,Twilight Masquerade,153,NearMint,0.21,https://images.pokemontcg.io/sv6/153.png
-Iron Thorns,Temporal Forces,062,NearMint,0.21,https://images.pokemontcg.io/sv5/62.png
-Brambleghast,Temporal Forces,021,NearMint,0.20,https://images.pokemontcg.io/sv5/21.png
-Ting-Lu,Paradox Rift,109,NearMint,0.19,https://images.pokemontcg.io/sv4/109.png
-Wo-Chien,Paradox Rift,018,NearMint,0.17,https://images.pokemontcg.io/sv4/18.png
-Technical Machine: Devolution,Paradox Rift,177,NearMint,0.17,https://images.pokemontcg.io/sv4/177.png
-Iron Boulder,Stellar Crown,071,NearMint,0.17,https://images.pokemontcg.io/sv7/71.png
-Chien-Pao,Paradox Rift,057,NearMint,0.16,https://images.pokemontcg.io/sv4/57.png
-Archaludon,Stellar Crown,107,NearMint,0.16,https://images.pokemontcg.io/sv7/107.png
-Luxurious Cape,Paradox Rift,166,NearMint,0.15,https://images.pokemontcg.io/sv4/166.png
-Snorunt,Twilight Masquerade,051,NearMint,0.14,https://images.pokemontcg.io/sv6/51.png
-Trubbish,Paradox Rift,116,NearMint,0.12,https://images.pokemontcg.io/sv4/116.png
-Totodile,Temporal Forces,039,NearMint,0.12,https://images.pokemontcg.io/sv5/39.png
-Kadabra,Twilight Masquerade,081,NearMint,0.12,https://images.pokemontcg.io/sv6/81.png
-Eevee,Surging Sparks,143/191,NearMint,0.12,https://images.pokemontcg.io/sv8/143.png
-Professor Sada’s Vitality,Paradox Rift,170,NearMint,0.11,https://images.pokemontcg.io/sv4/170.png
-Morty’s Conviction,Temporal Forces,155,NearMint,0.11,https://images.pokemontcg.io/sv5/155.png
-Grookey,Twilight Masquerade,014,NearMint,0.11,https://images.pokemontcg.io/sv6/14.png
-Abra,Twilight Masquerade,080,NearMint,0.11,https://images.pokemontcg.io/sv6/80.png
-Regigigas,Prismatic Evolutions,086,NearMint,0.10,https://images.pokemontcg.io/sv8pt5/86.png
-Professor Turo’s Scenario,Prismatic Evolutions,121,NearMint,0.10,https://images.pokemontcg.io/sv8pt5/121.png
-Morpeko,Pokémon Prize Pack Series,121,NearMint,0.10,https://images.pokemontcg.io/svp/121.png
-Garbodor,Paradox Rift,117,NearMint,0.10,https://images.pokemontcg.io/sv4/117.png
-Drakloak,Prismatic Evolutions,072,NearMint,0.10,https://images.pokemontcg.io/sv8pt5/72.png
-Bloodmoon Ursaluna,Prismatic Evolutions,054,NearMint,0.10,https://images.pokemontcg.io/sv8pt5/54.png
-Gimmighoul,Paradox Rift,088,NearMint,0.09,https://images.pokemontcg.io/sv4/88.png
-Future Booster Energy Capsule,Paradox Rift,164,NearMint,0.09,https://images.pokemontcg.io/sv4/164.png
-Wugtrio,Paradox Rift,053,NearMint,0.08,https://images.pokemontcg.io/sv4/53.png
-Slither Wing,Shrouded Fable,026,NearMint,0.08,https://images.pokemontcg.io/sv6pt5/26.png
-Natu,Paradox Rift,071,NearMint,0.08,https://images.pokemontcg.io/sv4/71.png
-Iron Treads,Temporal Forces,118,NearMint,0.08,https://images.pokemontcg.io/sv5/118.png
-Fan Rotom,Prismatic Evolutions,085,NearMint,0.08,https://images.pokemontcg.io/sv8pt5/85.png
-Bianca’s Devotion,Temporal Forces,142,NearMint,0.08,https://images.pokemontcg.io/sv5/142.png
-Beldum,Temporal Forces,113,NearMint,0.08,https://images.pokemontcg.io/sv5/113.png
-Area Zero Underdepths,Prismatic Evolutions,094,NearMint,0.08,https://images.pokemontcg.io/sv8pt5/94.png
-Wiglett,Temporal Forces,047,NearMint,0.07,https://images.pokemontcg.io/sv5/47.png
-Rescue Board,Prismatic Evolutions,126,NearMint,0.07,https://images.pokemontcg.io/sv8pt5/126.png
-Milotic,Twilight Masquerade,050,NearMint,0.07,https://images.pokemontcg.io/sv6/50.png
-Mela,Paradox Rift,167,NearMint,0.07,https://images.pokemontcg.io/sv4/167.png
-Honedge,Paradox Rift,131,NearMint,0.07,https://images.pokemontcg.io/sv4/131.png
-Friends in Paldea,Prismatic Evolutions,109,NearMint,0.07,https://images.pokemontcg.io/sv8pt5/109.png
-Finizen,Twilight Masquerade,059,NearMint,0.07,https://images.pokemontcg.io/sv6/59.png
-Fan Rotom,Stellar Crown,118,NearMint,0.07,https://images.pokemontcg.io/sv7/118.png
-Ciphermaniac’s Codebreaking,Prismatic Evolutions,104,NearMint,0.07,https://images.pokemontcg.io/sv8pt5/104.png
-Zorua,Shrouded Fable,031,NearMint,0.06,https://images.pokemontcg.io/sv6pt5/31.png
-Palafin,Twilight Masquerade,060,NearMint,0.06,https://images.pokemontcg.io/sv6/60.png
-Ogre’s Mask,Twilight Masquerade,159,NearMint,0.06,https://images.pokemontcg.io/sv6/159.png
-Great Tusk,Prismatic Evolutions,055,NearMint,0.06,https://images.pokemontcg.io/sv8pt5/55.png
-Dunsparce,Prismatic Evolutions,079,NearMint,0.06,https://images.pokemontcg.io/sv8pt5/79.png
-Bramblin,Temporal Forces,020,NearMint,0.06,https://images.pokemontcg.io/sv5/20.png
-Swirlix,Twilight Masquerade,089,NearMint,0.05,https://images.pokemontcg.io/sv6/89.png
-Rellor,Temporal Forces,023,NearMint,0.05,https://images.pokemontcg.io/sv5/23.png
-Larry’s Skill,Prismatic Evolutions,115,NearMint,0.05,https://images.pokemontcg.io/sv8pt5/115.png
-Haban Berry,Prismatic Evolutions,111,NearMint,0.05,https://images.pokemontcg.io/sv8pt5/111.png
-Gible,Paradox Rift,094,NearMint,0.05,https://images.pokemontcg.io/sv4/94.png
-Drilbur,Temporal Forces,085,NearMint,0.05,https://images.pokemontcg.io/sv5/85.png
-Charcadet,Obsidian Flames,043,NearMint,0.05,https://images.pokemontcg.io/sv3/43.png
-Binding Mochi,Shrouded Fable,055,NearMint,0.05,https://images.pokemontcg.io/sv6pt5/55.png
-Hoothoot,Prismatic Evolutions,077,NearMint,0.04,https://images.pokemontcg.io/sv8pt5/77.png
-Feebas,Twilight Masquerade,049,NearMint,0.04,https://images.pokemontcg.io/sv6/49.png
-Duraludon,Prismatic Evolutions,069,NearMint,0.04,https://images.pokemontcg.io/sv8pt5/69.png
-Amarys,Prismatic Evolutions,093,NearMint,0.04,https://images.pokemontcg.io/sv8pt5/93.png
-Varoom,Shrouded Fable,043,NearMint,0.03,https://images.pokemontcg.io/sv6pt5/43.png
+Sylveon ex,Prismatic Evolutions,156,NearMint,550.79,https://images.pokemontcg.io/sv8pt5/156.png
+Greninja ex,Twilight Masquerade,214,NearMint,382.51,https://images.pokemontcg.io/sv6/214.png
+Charizard ex,151,199,NearMint,369.37,https://images.pokemontcg.io/sv3pt5/199.png
+Leafeon ex,Prismatic Evolutions,144,NearMint,337.20,https://images.pokemontcg.io/sv8pt5/144.png
+Espeon ex,Prismatic Evolutions,155,NearMint,315.59,https://images.pokemontcg.io/sv8pt5/155.png
+Pikachu ex,Surging Sparks,238,NearMint,304.69,https://images.pokemontcg.io/sv8/238.png
+Vaporeon ex,Prismatic Evolutions,149,NearMint,301.38,https://images.pokemontcg.io/sv8pt5/149.png
+Glaceon ex,Prismatic Evolutions,150,NearMint,280.84,https://images.pokemontcg.io/sv8pt5/150.png
+Flareon ex,Prismatic Evolutions,146,NearMint,225.79,https://images.pokemontcg.io/sv8pt5/146.png
+Jolteon ex,Prismatic Evolutions,153,NearMint,203.50,https://images.pokemontcg.io/sv8pt5/153.png
+Eevee ex,Prismatic Evolutions,167,NearMint,186.71,https://images.pokemontcg.io/sv8pt5/167.png
+Gardevoir ex,Paldean Fates,233,NearMint,180.12,https://images.pokemontcg.io/sv4pt5/233.png
+Latias ex,Surging Sparks,239,NearMint,177.96,https://images.pokemontcg.io/sv8/239.png
+Venusaur ex,151,198,NearMint,119.20,https://images.pokemontcg.io/sv3pt5/198.png
+Zapdos ex,151,202,NearMint,102.20,https://images.pokemontcg.io/sv3pt5/202.png
+Persian,Shrouded Fable,78,NearMint,72.24,https://images.pokemontcg.io/sv6pt5/78.png
+Bloodmoon Ursaluna ex,Prismatic Evolutions,168,NearMint,66.53,https://images.pokemontcg.io/sv8pt5/168.png
+Sawsbuck,Temporal Forces,166,NearMint,58.74,https://images.pokemontcg.io/sv5/166.png
+Duskull,Shrouded Fable,68,NearMint,55.74,https://images.pokemontcg.io/sv6pt5/68.png
+Dragonair,151,181,NearMint,48.53,https://images.pokemontcg.io/sv3pt5/181.png
+Cassiopeia,Shrouded Fable,94,NearMint,43.01,https://images.pokemontcg.io/sv6pt5/94.png
+Fezandipiti ex,Shrouded Fable,92,NearMint,41.22,https://images.pokemontcg.io/sv6pt5/92.png
+Terapagos ex,Stellar Crown,170,NearMint,38.69,https://images.pokemontcg.io/sv7/170.png
+Hydreigon ex,Surging Sparks,240,NearMint,35.54,https://images.pokemontcg.io/sv8/240.png
+Iron Hands ex,Prismatic Evolutions,154,NearMint,33.57,https://images.pokemontcg.io/sv8pt5/154.png
+Dusknoir,Shrouded Fable,70,NearMint,30.31,https://images.pokemontcg.io/sv6pt5/70.png
+Kieran,Twilight Masquerade,218,NearMint,28.48,https://images.pokemontcg.io/sv6/218.png
+Lisia's Appeal,Surging Sparks,246,NearMint,27.62,https://images.pokemontcg.io/sv8/246.png
+Minccino,Temporal Forces,182,NearMint,25.86,https://images.pokemontcg.io/sv5/182.png
+Okidogi ex,Shrouded Fable,90,NearMint,22.45,https://images.pokemontcg.io/sv6pt5/90.png

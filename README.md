@@ -11,9 +11,9 @@ insights are all computed **at the edge**, per request.
 
 - **Rank-based podium** — walkers are sorted by total steps; #1 earns the rarest available card,
   #2 the next-rarest, and so on.
-- **Rarity = market value** — the reward pool (`data/pokemon.csv`) is sorted by each card's
-  MARKET price, bucketed into tiers: `Chase >$50 · Ultra Rare $10–50 · Rare $2–10 ·
-  Uncommon $0.50–2 · Common <$0.50`.
+- **Rarity = market value** — the reward pool (`data/pokemon.csv`) is a curated set of desirable
+  cards ($20–$1000, real TCGplayer prices), sorted by MARKET price and bucketed into tiers:
+  `Grail ≥$350 · Chase $250–350 · Ultra Rare $150–250 · Rare $60–150 · Premium $20–60`.
 - **Team standings** — walkers are aggregated by their team, ranked by combined steps.
 - **Card art on hover** — hovering any card name previews the real card image, resolved from the
   [Pokémon TCG](https://pokemontcg.io/) image CDN.
